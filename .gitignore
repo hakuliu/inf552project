@@ -82,6 +82,10 @@ celerybeat-schedule
 venv/
 ENV/
 
+# datafiles
+ptbdb/
+sampledata/
+
 # Spyder project settings
 .spyderproject
 
