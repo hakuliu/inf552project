@@ -12,13 +12,20 @@ def extractPatientAttributes(record):
     '''
     return None
 
-def extratPatientDiagnoses(record):
+def extratPatientDiagnoses(recordheader):
     '''
     parses the comments section(?) of the record to find out what kind of heart problem (if any) this patient had
     :param record: sample record read from wfdb.rdsamp
     :return: a list of diagnoses pertaining to this patient
     '''
-    return None
+    diag = []
+    comments = recordheader.comments
+    for comment in comments:
+        if 'Reason for admission' in comment:# or 'Additional diagnoses' in comment:
+            diag.extend(comment.split(':')[1].split(','))
+    diag = map(str.strip, diag)
+
+    return diag
 
 def extractAllGraphs(record):
     '''
@@ -26,7 +33,7 @@ def extractAllGraphs(record):
     :param record: 
     :return: 
     '''
-    return None
+    return record.p_signals
 
 def extractGraph(index, record):
     '''
@@ -37,4 +44,4 @@ def extractGraph(index, record):
     :param record: 
     :return: 
     '''
-    return None
+    return extractAllGraphs(record)[:, index]

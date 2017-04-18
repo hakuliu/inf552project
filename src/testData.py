@@ -6,8 +6,11 @@ import numpy as np
 import os
 from IPython.display import display
 
+
+
+
 #read our own ecg data
-record = wfdb.rdsamp('../ptbdb/patient001/s0010_re')
+record = wfdb.rdsamp('../ptbdb/patient002/s0015lre')
 wfdb.plotrec(record, title='ecg data of patient 001')
 display(record.__dict__)
 
