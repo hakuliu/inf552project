@@ -3,14 +3,26 @@ This package serves to provide a bunch of utility files that allows us to take s
 into data that is more convenient for our analysis, and easier for us to understand.
 '''
 
-def extractPatientAttributes(record):
+def extractPatientAttributes(recordheader):
     '''
     uses the comments section(?) of the record to parse out relevant information
     that will be used for our learning algorithm (don't know if it'll be input or output yet)
     :param record: sample record read from wfdb.rdsamp
     :return: a dictionary of attribute - value
     '''
-    return None
+    attr = []
+    comments = recordheader.comments
+    for comment in comments:
+        if comment.strip().startswith('Smoker'):
+            attr.extend(comment.split(':')[1].split(','))
+        if comment.strip().startswith('age'):
+            attr.extend(comment.split(':')[1].split(','))
+        if comment.strip().startswith('sex'):
+            attr.extend(comment.split(':')[1].split(','))
+
+    attr = map(str.strip, attr)
+
+    return attr
 
 def extratPatientDiagnoses(recordheader):
     '''
@@ -24,6 +36,10 @@ def extratPatientDiagnoses(recordheader):
         if 'Reason for admission' in comment:# or 'Additional diagnoses' in comment:
             diag.extend(comment.split(':')[1].split(','))
     diag = map(str.strip, diag)
+
+    for i in range(len(diag)):
+        if('Healthy' in diag[i] or 'n/a' in diag[i]):
+            diag[i] = 'Healthy'
 
     return diag
 

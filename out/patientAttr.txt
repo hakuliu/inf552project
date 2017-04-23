@@ -1,0 +1,549 @@
+patient001/s0010_re,../ptbdb/patient001/s0010_re,81,female,no,Myocardial infarction
+patient001/s0014lre,../ptbdb/patient001/s0014lre,81,female,no,Myocardial infarction
+patient001/s0016lre,../ptbdb/patient001/s0016lre,81,female,no,Myocardial infarction
+patient002/s0015lre,../ptbdb/patient002/s0015lre,58,female,yes,Myocardial infarction
+patient003/s0017lre,../ptbdb/patient003/s0017lre,63,male,yes,Myocardial infarction
+patient004/s0020are,../ptbdb/patient004/s0020are,69,male,no,Myocardial infarction
+patient004/s0020bre,../ptbdb/patient004/s0020bre,69,male,no,Myocardial infarction
+patient005/s0021are,../ptbdb/patient005/s0021are,74,male,no,Myocardial infarction
+patient005/s0021bre,../ptbdb/patient005/s0021bre,74,male,no,Myocardial infarction
+patient005/s0025lre,../ptbdb/patient005/s0025lre,74,male,no,Myocardial infarction
+patient005/s0031lre,../ptbdb/patient005/s0031lre,74,male,no,Myocardial infarction
+patient005/s0101lre,../ptbdb/patient005/s0101lre,74,male,no,Myocardial infarction
+patient006/s0022lre,../ptbdb/patient006/s0022lre,62,female,yes,Myocardial infarction
+patient006/s0027lre,../ptbdb/patient006/s0027lre,62,female,yes,Myocardial infarction
+patient006/s0064lre,../ptbdb/patient006/s0064lre,62,female,yes,Myocardial infarction
+patient007/s0026lre,../ptbdb/patient007/s0026lre,70,male,no,Myocardial infarction
+patient007/s0029lre,../ptbdb/patient007/s0029lre,70,male,no,Myocardial infarction
+patient007/s0038lre,../ptbdb/patient007/s0038lre,70,male,no,Myocardial infarction
+patient007/s0078lre,../ptbdb/patient007/s0078lre,70,male,no,Myocardial infarction
+patient008/s0028lre,../ptbdb/patient008/s0028lre,60,male,yes,Myocardial infarction
+patient008/s0037lre,../ptbdb/patient008/s0037lre,60,male,yes,Myocardial infarction
+patient008/s0068lre,../ptbdb/patient008/s0068lre,60,male,yes,Myocardial infarction
+patient009/s0035_re,../ptbdb/patient009/s0035_re,66,male,yes,Myocardial infarction
+patient010/s0036lre,../ptbdb/patient010/s0036lre,46,male,no,Myocardial infarction
+patient010/s0042lre,../ptbdb/patient010/s0042lre,46,male,no,Myocardial infarction
+patient010/s0061lre,../ptbdb/patient010/s0061lre,46,male,no,Myocardial infarction
+patient011/s0039lre,../ptbdb/patient011/s0039lre,62,female,no,Myocardial infarction
+patient011/s0044lre,../ptbdb/patient011/s0044lre,62,female,no,Myocardial infarction
+patient011/s0049lre,../ptbdb/patient011/s0049lre,62,female,no,Myocardial infarction
+patient011/s0067lre,../ptbdb/patient011/s0067lre,62,female,no,Myocardial infarction
+patient012/s0043lre,../ptbdb/patient012/s0043lre,67,male,yes,Myocardial infarction
+patient012/s0050lre,../ptbdb/patient012/s0050lre,67,male,yes,Myocardial infarction
+patient013/s0045lre,../ptbdb/patient013/s0045lre,71,female,yes,Myocardial infarction
+patient013/s0051lre,../ptbdb/patient013/s0051lre,71,female,yes,Myocardial infarction
+patient013/s0072lre,../ptbdb/patient013/s0072lre,71,female,yes,Myocardial infarction
+patient014/s0046lre,../ptbdb/patient014/s0046lre,75,male,no,Myocardial infarction
+patient014/s0056lre,../ptbdb/patient014/s0056lre,75,male,no,Myocardial infarction
+patient014/s0071lre,../ptbdb/patient014/s0071lre,75,male,no,Myocardial infarction
+patient015/s0047lre,../ptbdb/patient015/s0047lre,68,female,no,Myocardial infarction
+patient015/s0057lre,../ptbdb/patient015/s0057lre,68,female,no,Myocardial infarction
+patient015/s0152lre,../ptbdb/patient015/s0152lre,68,female,no,Myocardial infarction
+patient016/s0052lre,../ptbdb/patient016/s0052lre,63,male,no,Myocardial infarction
+patient016/s0060lre,../ptbdb/patient016/s0060lre,63,male,no,Myocardial infarction
+patient016/s0076lre,../ptbdb/patient016/s0076lre,63,male,no,Myocardial infarction
+patient017/s0053lre,../ptbdb/patient017/s0053lre,60,male,no,Myocardial infarction
+patient017/s0055lre,../ptbdb/patient017/s0055lre,60,male,no,Myocardial infarction
+patient017/s0063lre,../ptbdb/patient017/s0063lre,60,male,no,Myocardial infarction
+patient017/s0075lre,../ptbdb/patient017/s0075lre,60,male,no,Myocardial infarction
+patient018/s0054lre,../ptbdb/patient018/s0054lre,52,male,no,Myocardial infarction
+patient018/s0059lre,../ptbdb/patient018/s0059lre,52,male,no,Myocardial infarction
+patient018/s0082lre,../ptbdb/patient018/s0082lre,52,male,no,Myocardial infarction
+patient019/s0058lre,../ptbdb/patient019/s0058lre,57,male,yes,Myocardial infarction
+patient019/s0070lre,../ptbdb/patient019/s0070lre,57,male,yes,Myocardial infarction
+patient019/s0077lre,../ptbdb/patient019/s0077lre,57,male,yes,Myocardial infarction
+patient020/s0062lre,../ptbdb/patient020/s0062lre,54,female,no,Myocardial infarction
+patient020/s0069lre,../ptbdb/patient020/s0069lre,54,female,no,Myocardial infarction
+patient020/s0079lre,../ptbdb/patient020/s0079lre,54,female,no,Myocardial infarction
+patient021/s0065lre,../ptbdb/patient021/s0065lre,67,male,yes,Myocardial infarction
+patient021/s0073lre,../ptbdb/patient021/s0073lre,67,male,yes,Myocardial infarction
+patient021/s0097lre,../ptbdb/patient021/s0097lre,67,male,yes,Myocardial infarction
+patient022/s0066lre,../ptbdb/patient022/s0066lre,43,male,yes,Myocardial infarction
+patient022/s0074lre,../ptbdb/patient022/s0074lre,43,male,yes,Myocardial infarction
+patient022/s0149lre,../ptbdb/patient022/s0149lre,43,male,yes,Myocardial infarction
+patient023/s0080lre,../ptbdb/patient023/s0080lre,69,male,no,Myocardial infarction
+patient023/s0081lre,../ptbdb/patient023/s0081lre,69,male,no,Myocardial infarction
+patient023/s0085lre,../ptbdb/patient023/s0085lre,69,male,no,Myocardial infarction
+patient023/s0103lre,../ptbdb/patient023/s0103lre,69,male,no,Myocardial infarction
+patient024/s0083lre,../ptbdb/patient024/s0083lre,52,male,no,Myocardial infarction
+patient024/s0084lre,../ptbdb/patient024/s0084lre,52,male,no,Myocardial infarction
+patient024/s0086lre,../ptbdb/patient024/s0086lre,52,male,no,Myocardial infarction
+patient024/s0094lre,../ptbdb/patient024/s0094lre,52,male,no,Myocardial infarction
+patient025/s0087lre,../ptbdb/patient025/s0087lre,76,male,no,Myocardial infarction
+patient025/s0091lre,../ptbdb/patient025/s0091lre,76,male,no,Myocardial infarction
+patient025/s0150lre,../ptbdb/patient025/s0150lre,76,male,no,Myocardial infarction
+patient026/s0088lre,../ptbdb/patient026/s0088lre,74,female,no,Myocardial infarction
+patient026/s0095lre,../ptbdb/patient026/s0095lre,74,female,no,Myocardial infarction
+patient027/s0089lre,../ptbdb/patient027/s0089lre,53,male,no,Myocardial infarction
+patient027/s0096lre,../ptbdb/patient027/s0096lre,53,male,no,Myocardial infarction
+patient027/s0151lre,../ptbdb/patient027/s0151lre,53,male,no,Myocardial infarction
+patient028/s0090lre,../ptbdb/patient028/s0090lre,49,male,yes,Myocardial infarction
+patient028/s0093lre,../ptbdb/patient028/s0093lre,49,male,yes,Myocardial infarction
+patient028/s0108lre,../ptbdb/patient028/s0108lre,49,male,yes,Myocardial infarction
+patient029/s0092lre,../ptbdb/patient029/s0092lre,49,male,yes,Myocardial infarction
+patient029/s0098lre,../ptbdb/patient029/s0098lre,49,male,yes,Myocardial infarction
+patient029/s0122lre,../ptbdb/patient029/s0122lre,49,male,yes,Myocardial infarction
+patient030/s0099lre,../ptbdb/patient030/s0099lre,63,male,yes,Myocardial infarction
+patient030/s0107lre,../ptbdb/patient030/s0107lre,63,male,yes,Myocardial infarction
+patient030/s0117lre,../ptbdb/patient030/s0117lre,63,male,yes,Myocardial infarction
+patient030/s0153lre,../ptbdb/patient030/s0153lre,63,male,yes,Myocardial infarction
+patient031/s0100lre,../ptbdb/patient031/s0100lre,65,male,yes,Myocardial infarction
+patient031/s0104lre,../ptbdb/patient031/s0104lre,65,male,yes,Myocardial infarction
+patient031/s0114lre,../ptbdb/patient031/s0114lre,65,male,yes,Myocardial infarction
+patient031/s0127lre,../ptbdb/patient031/s0127lre,65,male,yes,Myocardial infarction
+patient032/s0102lre,../ptbdb/patient032/s0102lre,49,male,no,Myocardial infarction
+patient032/s0106lre,../ptbdb/patient032/s0106lre,49,male,no,Myocardial infarction
+patient032/s0115lre,../ptbdb/patient032/s0115lre,49,male,no,Myocardial infarction
+patient032/s0165lre,../ptbdb/patient032/s0165lre,49,male,no,Myocardial infarction
+patient033/s0105lre,../ptbdb/patient033/s0105lre,60,male,no,Myocardial infarction
+patient033/s0113lre,../ptbdb/patient033/s0113lre,60,male,no,Myocardial infarction
+patient033/s0121lre,../ptbdb/patient033/s0121lre,60,male,no,Myocardial infarction
+patient033/s0157lre,../ptbdb/patient033/s0157lre,60,male,no,Myocardial infarction
+patient034/s0109lre,../ptbdb/patient034/s0109lre,49,male,yes,Myocardial infarction
+patient034/s0118lre,../ptbdb/patient034/s0118lre,49,male,yes,Myocardial infarction
+patient034/s0123lre,../ptbdb/patient034/s0123lre,49,male,yes,Myocardial infarction
+patient034/s0158lre,../ptbdb/patient034/s0158lre,49,male,yes,Myocardial infarction
+patient035/s0110lre,../ptbdb/patient035/s0110lre,40,male,no,Myocardial infarction
+patient035/s0119lre,../ptbdb/patient035/s0119lre,40,male,no,Myocardial infarction
+patient035/s0124lre,../ptbdb/patient035/s0124lre,40,male,no,Myocardial infarction
+patient035/s0145lre,../ptbdb/patient035/s0145lre,40,male,no,Myocardial infarction
+patient036/s0111lre,../ptbdb/patient036/s0111lre,75,male,no,Myocardial infarction
+patient036/s0116lre,../ptbdb/patient036/s0116lre,75,male,no,Myocardial infarction
+patient036/s0126lre,../ptbdb/patient036/s0126lre,75,male,no,Myocardial infarction
+patient037/s0112lre,../ptbdb/patient037/s0112lre,50,male,yes,Myocardial infarction
+patient037/s0120lre,../ptbdb/patient037/s0120lre,50,male,yes,Myocardial infarction
+patient038/s0125lre,../ptbdb/patient038/s0125lre,36,male,yes,Myocardial infarction
+patient038/s0128lre,../ptbdb/patient038/s0128lre,36,male,yes,Myocardial infarction
+patient038/s0162lre,../ptbdb/patient038/s0162lre,36,male,yes,Myocardial infarction
+patient039/s0129lre,../ptbdb/patient039/s0129lre,61,male,yes,Myocardial infarction
+patient039/s0134lre,../ptbdb/patient039/s0134lre,61,male,yes,Myocardial infarction
+patient039/s0164lre,../ptbdb/patient039/s0164lre,61,male,yes,Myocardial infarction
+patient040/s0130lre,../ptbdb/patient040/s0130lre,51,male,yes,Myocardial infarction
+patient040/s0131lre,../ptbdb/patient040/s0131lre,51,male,yes,Myocardial infarction
+patient040/s0133lre,../ptbdb/patient040/s0133lre,51,male,yes,Myocardial infarction
+patient040/s0219lre,../ptbdb/patient040/s0219lre,51,male,yes,Myocardial infarction
+patient041/s0132lre,../ptbdb/patient041/s0132lre,65,male,no,Myocardial infarction
+patient041/s0136lre,../ptbdb/patient041/s0136lre,65,male,no,Myocardial infarction
+patient041/s0138lre,../ptbdb/patient041/s0138lre,65,male,no,Myocardial infarction
+patient041/s0276lre,../ptbdb/patient041/s0276lre,65,male,no,Myocardial infarction
+patient042/s0135lre,../ptbdb/patient042/s0135lre,49,male,yes,Myocardial infarction
+patient042/s0137lre,../ptbdb/patient042/s0137lre,49,male,yes,Myocardial infarction
+patient042/s0140lre,../ptbdb/patient042/s0140lre,49,male,yes,Myocardial infarction
+patient042/s0347lre,../ptbdb/patient042/s0347lre,49,male,yes,Myocardial infarction
+patient043/s0141lre,../ptbdb/patient043/s0141lre,52,female,yes,Myocardial infarction
+patient043/s0144lre,../ptbdb/patient043/s0144lre,52,female,yes,Myocardial infarction
+patient043/s0278lre,../ptbdb/patient043/s0278lre,52,female,yes,Myocardial infarction
+patient044/s0142lre,../ptbdb/patient044/s0142lre,66,female,yes,Myocardial infarction
+patient044/s0143lre,../ptbdb/patient044/s0143lre,66,female,yes,Myocardial infarction
+patient044/s0146lre,../ptbdb/patient044/s0146lre,66,female,yes,Myocardial infarction
+patient044/s0159lre,../ptbdb/patient044/s0159lre,66,female,yes,Myocardial infarction
+patient045/s0147lre,../ptbdb/patient045/s0147lre,44,male,no,Myocardial infarction
+patient045/s0148lre,../ptbdb/patient045/s0148lre,44,male,no,Myocardial infarction
+patient045/s0155lre,../ptbdb/patient045/s0155lre,44,male,no,Myocardial infarction
+patient045/s0217lre,../ptbdb/patient045/s0217lre,44,male,no,Myocardial infarction
+patient046/s0156lre,../ptbdb/patient046/s0156lre,64,female,yes,Myocardial infarction
+patient046/s0161lre,../ptbdb/patient046/s0161lre,64,female,yes,Myocardial infarction
+patient046/s0168lre,../ptbdb/patient046/s0168lre,64,female,yes,Myocardial infarction
+patient046/s0184lre,../ptbdb/patient046/s0184lre,64,female,yes,Myocardial infarction
+patient047/s0160lre,../ptbdb/patient047/s0160lre,86,male,yes,Myocardial infarction
+patient047/s0163lre,../ptbdb/patient047/s0163lre,86,male,yes,Myocardial infarction
+patient047/s0167lre,../ptbdb/patient047/s0167lre,86,male,yes,Myocardial infarction
+patient048/s0171lre,../ptbdb/patient048/s0171lre,64,male,no,Myocardial infarction
+patient048/s0172lre,../ptbdb/patient048/s0172lre,64,male,no,Myocardial infarction
+patient048/s0180lre,../ptbdb/patient048/s0180lre,64,male,no,Myocardial infarction
+patient048/s0277lre,../ptbdb/patient048/s0277lre,64,male,no,Myocardial infarction
+patient049/s0173lre,../ptbdb/patient049/s0173lre,42,female,yes,Myocardial infarction
+patient049/s0178lre,../ptbdb/patient049/s0178lre,42,female,yes,Myocardial infarction
+patient049/s0186lre,../ptbdb/patient049/s0186lre,42,female,yes,Myocardial infarction
+patient049/s0314lre,../ptbdb/patient049/s0314lre,42,female,yes,Myocardial infarction
+patient050/s0174lre,../ptbdb/patient050/s0174lre,44,female,yes,Myocardial infarction
+patient050/s0177lre,../ptbdb/patient050/s0177lre,44,female,yes,Myocardial infarction
+patient050/s0185lre,../ptbdb/patient050/s0185lre,44,female,yes,Myocardial infarction
+patient050/s0215lre,../ptbdb/patient050/s0215lre,44,female,yes,Myocardial infarction
+patient051/s0179lre,../ptbdb/patient051/s0179lre,55,female,no,Myocardial infarction
+patient051/s0181lre,../ptbdb/patient051/s0181lre,55,female,no,Myocardial infarction
+patient051/s0187lre,../ptbdb/patient051/s0187lre,55,female,no,Myocardial infarction
+patient051/s0213lre,../ptbdb/patient051/s0213lre,55,female,no,Myocardial infarction
+patient052/s0190lre,../ptbdb/patient052/s0190lre,44,male,yes,Myocardial infarction
+patient053/s0191lre,../ptbdb/patient053/s0191lre,66,male,yes,Myocardial infarction
+patient054/s0192lre,../ptbdb/patient054/s0192lre,47,male,no,Myocardial infarction
+patient054/s0195lre,../ptbdb/patient054/s0195lre,47,male,no,Myocardial infarction
+patient054/s0197lre,../ptbdb/patient054/s0197lre,47,male,no,Myocardial infarction
+patient054/s0218lre,../ptbdb/patient054/s0218lre,47,male,no,Myocardial infarction
+patient055/s0194lre,../ptbdb/patient055/s0194lre,66,female,no,Myocardial infarction
+patient056/s0196lre,../ptbdb/patient056/s0196lre,48,female,no,Myocardial infarction
+patient057/s0198lre,../ptbdb/patient057/s0198lre,53,male,yes,Myocardial infarction
+patient058/s0216lre,../ptbdb/patient058/s0216lre,52,female,yes,Myocardial infarction
+patient059/s0208lre,../ptbdb/patient059/s0208lre,63,female,no,Myocardial infarction
+patient060/s0209lre,../ptbdb/patient060/s0209lre,54,male,no,Myocardial infarction
+patient061/s0210lre,../ptbdb/patient061/s0210lre,37,male,yes,Myocardial infarction
+patient062/s0212lre,../ptbdb/patient062/s0212lre,68,female,no,Myocardial infarction
+patient063/s0214lre,../ptbdb/patient063/s0214lre,62,male,yes,Myocardial infarction
+patient064/s0220lre,../ptbdb/patient064/s0220lre,72,male,no,Myocardial infarction
+patient065/s0221lre,../ptbdb/patient065/s0221lre,52,male,no,Myocardial infarction
+patient065/s0226lre,../ptbdb/patient065/s0226lre,52,male,no,Myocardial infarction
+patient065/s0229lre,../ptbdb/patient065/s0229lre,52,male,no,Myocardial infarction
+patient065/s0282lre,../ptbdb/patient065/s0282lre,52,male,no,Myocardial infarction
+patient066/s0225lre,../ptbdb/patient066/s0225lre,68,male,no,Myocardial infarction
+patient066/s0231lre,../ptbdb/patient066/s0231lre,68,male,no,Myocardial infarction
+patient066/s0280lre,../ptbdb/patient066/s0280lre,68,male,no,Myocardial infarction
+patient067/s0227lre,../ptbdb/patient067/s0227lre,59,male,yes,Myocardial infarction
+patient067/s0230lre,../ptbdb/patient067/s0230lre,59,male,yes,Myocardial infarction
+patient067/s0283lre,../ptbdb/patient067/s0283lre,59,male,yes,Myocardial infarction
+patient068/s0228lre,../ptbdb/patient068/s0228lre,44,male,yes,Myocardial infarction
+patient069/s0232lre,../ptbdb/patient069/s0232lre,62,male,yes,Myocardial infarction
+patient069/s0233lre,../ptbdb/patient069/s0233lre,62,male,yes,Myocardial infarction
+patient069/s0234lre,../ptbdb/patient069/s0234lre,62,male,yes,Myocardial infarction
+patient069/s0284lre,../ptbdb/patient069/s0284lre,62,male,yes,Myocardial infarction
+patient070/s0235lre,../ptbdb/patient070/s0235lre,52,male,yes,Myocardial infarction
+patient071/s0236lre,../ptbdb/patient071/s0236lre,80,male,yes,Myocardial infarction
+patient072/s0237lre,../ptbdb/patient072/s0237lre,40,male,yes,Myocardial infarction
+patient072/s0240lre,../ptbdb/patient072/s0240lre,40,male,yes,Myocardial infarction
+patient072/s0244lre,../ptbdb/patient072/s0244lre,40,male,yes,Myocardial infarction
+patient072/s0318lre,../ptbdb/patient072/s0318lre,40,male,yes,Myocardial infarction
+patient073/s0238lre,../ptbdb/patient073/s0238lre,63,male,no,Myocardial infarction
+patient073/s0243lre,../ptbdb/patient073/s0243lre,63,male,no,Myocardial infarction
+patient073/s0249lre,../ptbdb/patient073/s0249lre,63,male,no,Myocardial infarction
+patient073/s0252lre,../ptbdb/patient073/s0252lre,63,male,no,Myocardial infarction
+patient074/s0239lre,../ptbdb/patient074/s0239lre,80,female,no,Myocardial infarction
+patient074/s0241lre,../ptbdb/patient074/s0241lre,80,female,no,Myocardial infarction
+patient074/s0245lre,../ptbdb/patient074/s0245lre,80,female,no,Myocardial infarction
+patient074/s0406lre,../ptbdb/patient074/s0406lre,80,female,no,Myocardial infarction
+patient075/s0242lre,../ptbdb/patient075/s0242lre,50,male,yes,Myocardial infarction
+patient075/s0246lre,../ptbdb/patient075/s0246lre,50,male,yes,Myocardial infarction
+patient075/s0248lre,../ptbdb/patient075/s0248lre,50,male,yes,Myocardial infarction
+patient075/s0327lre,../ptbdb/patient075/s0327lre,50,male,yes,Myocardial infarction
+patient076/s0247lre,../ptbdb/patient076/s0247lre,43,male,yes,Myocardial infarction
+patient076/s0250lre,../ptbdb/patient076/s0250lre,43,male,yes,Myocardial infarction
+patient076/s0253lre,../ptbdb/patient076/s0253lre,43,male,yes,Myocardial infarction
+patient076/s0319lre,../ptbdb/patient076/s0319lre,43,male,yes,Myocardial infarction
+patient077/s0251lre,../ptbdb/patient077/s0251lre,65,male,yes,Myocardial infarction
+patient077/s0254lre,../ptbdb/patient077/s0254lre,65,male,yes,Myocardial infarction
+patient077/s0258lre,../ptbdb/patient077/s0258lre,65,male,yes,Myocardial infarction
+patient077/s0285lre,../ptbdb/patient077/s0285lre,65,male,yes,Myocardial infarction
+patient078/s0255lre,../ptbdb/patient078/s0255lre,68,male,yes,Myocardial infarction
+patient078/s0259lre,../ptbdb/patient078/s0259lre,68,male,yes,Myocardial infarction
+patient078/s0262lre,../ptbdb/patient078/s0262lre,68,male,yes,Myocardial infarction
+patient078/s0317lre,../ptbdb/patient078/s0317lre,68,male,yes,Myocardial infarction
+patient079/s0256lre,../ptbdb/patient079/s0256lre,75,male,yes,Myocardial infarction
+patient079/s0257lre,../ptbdb/patient079/s0257lre,75,male,yes,Myocardial infarction
+patient079/s0263lre,../ptbdb/patient079/s0263lre,75,male,yes,Myocardial infarction
+patient079/s0269lre,../ptbdb/patient079/s0269lre,75,male,yes,Myocardial infarction
+patient080/s0260lre,../ptbdb/patient080/s0260lre,48,male,yes,Myocardial infarction
+patient080/s0261lre,../ptbdb/patient080/s0261lre,48,male,yes,Myocardial infarction
+patient080/s0265lre,../ptbdb/patient080/s0265lre,48,male,yes,Myocardial infarction
+patient080/s0315lre,../ptbdb/patient080/s0315lre,48,male,yes,Myocardial infarction
+patient081/s0264lre,../ptbdb/patient081/s0264lre,53,male,yes,Myocardial infarction
+patient081/s0266lre,../ptbdb/patient081/s0266lre,53,male,yes,Myocardial infarction
+patient081/s0270lre,../ptbdb/patient081/s0270lre,53,male,yes,Myocardial infarction
+patient081/s0346lre,../ptbdb/patient081/s0346lre,53,male,yes,Myocardial infarction
+patient082/s0267lre,../ptbdb/patient082/s0267lre,65,male,no,Myocardial infarction
+patient082/s0271lre,../ptbdb/patient082/s0271lre,65,male,no,Myocardial infarction
+patient082/s0279lre,../ptbdb/patient082/s0279lre,65,male,no,Myocardial infarction
+patient082/s0320lre,../ptbdb/patient082/s0320lre,65,male,no,Myocardial infarction
+patient083/s0268lre,../ptbdb/patient083/s0268lre,45,male,yes,Myocardial infarction
+patient083/s0272lre,../ptbdb/patient083/s0272lre,45,male,yes,Myocardial infarction
+patient083/s0286lre,../ptbdb/patient083/s0286lre,45,male,yes,Myocardial infarction
+patient083/s0290lre,../ptbdb/patient083/s0290lre,45,male,yes,Myocardial infarction
+patient084/s0281lre,../ptbdb/patient084/s0281lre,55,male,yes,Myocardial infarction
+patient084/s0288lre,../ptbdb/patient084/s0288lre,55,male,yes,Myocardial infarction
+patient084/s0289lre,../ptbdb/patient084/s0289lre,55,male,yes,Myocardial infarction
+patient084/s0313lre,../ptbdb/patient084/s0313lre,55,male,yes,Myocardial infarction
+patient085/s0296lre,../ptbdb/patient085/s0296lre,56,female,yes,Myocardial infarction
+patient085/s0297lre,../ptbdb/patient085/s0297lre,56,female,yes,Myocardial infarction
+patient085/s0298lre,../ptbdb/patient085/s0298lre,56,female,yes,Myocardial infarction
+patient085/s0345lre,../ptbdb/patient085/s0345lre,56,female,yes,Myocardial infarction
+patient086/s0316lre,../ptbdb/patient086/s0316lre,66,female,yes,Myocardial infarction
+patient087/s0321lre,../ptbdb/patient087/s0321lre,66,male,yes,Myocardial infarction
+patient087/s0326lre,../ptbdb/patient087/s0326lre,66,male,yes,Myocardial infarction
+patient087/s0330lre,../ptbdb/patient087/s0330lre,66,male,yes,Myocardial infarction
+patient088/s0339lre,../ptbdb/patient088/s0339lre,54,male,yes,Myocardial infarction
+patient088/s0343lre,../ptbdb/patient088/s0343lre,54,male,yes,Myocardial infarction
+patient088/s0352lre,../ptbdb/patient088/s0352lre,54,male,yes,Myocardial infarction
+patient088/s0413lre,../ptbdb/patient088/s0413lre,54,male,yes,Myocardial infarction
+patient089/s0344lre,../ptbdb/patient089/s0344lre,80,female,no,Myocardial infarction
+patient089/s0355lre,../ptbdb/patient089/s0355lre,80,female,no,Myocardial infarction
+patient089/s0359lre,../ptbdb/patient089/s0359lre,80,female,no,Myocardial infarction
+patient089/s0372lre,../ptbdb/patient089/s0372lre,80,female,no,Myocardial infarction
+patient090/s0348lre,../ptbdb/patient090/s0348lre,51,male,yes,Myocardial infarction
+patient090/s0356lre,../ptbdb/patient090/s0356lre,51,male,yes,Myocardial infarction
+patient090/s0360lre,../ptbdb/patient090/s0360lre,51,male,yes,Myocardial infarction
+patient090/s0418lre,../ptbdb/patient090/s0418lre,51,male,yes,Myocardial infarction
+patient091/s0353lre,../ptbdb/patient091/s0353lre,78,female,no,Myocardial infarction
+patient091/s0357lre,../ptbdb/patient091/s0357lre,78,female,no,Myocardial infarction
+patient091/s0361lre,../ptbdb/patient091/s0361lre,78,female,no,Myocardial infarction
+patient091/s0408lre,../ptbdb/patient091/s0408lre,78,female,no,Myocardial infarction
+patient092/s0354lre,../ptbdb/patient092/s0354lre,44,female,yes,Myocardial infarction
+patient092/s0358lre,../ptbdb/patient092/s0358lre,44,female,yes,Myocardial infarction
+patient092/s0362lre,../ptbdb/patient092/s0362lre,44,female,yes,Myocardial infarction
+patient092/s0411lre,../ptbdb/patient092/s0411lre,44,female,yes,Myocardial infarction
+patient093/s0367lre,../ptbdb/patient093/s0367lre,48,male,yes,Myocardial infarction
+patient093/s0371lre,../ptbdb/patient093/s0371lre,48,male,yes,Myocardial infarction
+patient093/s0375lre,../ptbdb/patient093/s0375lre,48,male,yes,Myocardial infarction
+patient093/s0378lre,../ptbdb/patient093/s0378lre,48,male,yes,Myocardial infarction
+patient093/s0396lre,../ptbdb/patient093/s0396lre,48,male,yes,Myocardial infarction
+patient094/s0368lre,../ptbdb/patient094/s0368lre,71,female,no,Myocardial infarction
+patient094/s0370lre,../ptbdb/patient094/s0370lre,71,female,no,Myocardial infarction
+patient094/s0376lre,../ptbdb/patient094/s0376lre,71,female,no,Myocardial infarction
+patient094/s0412lre,../ptbdb/patient094/s0412lre,71,female,no,Myocardial infarction
+patient095/s0369lre,../ptbdb/patient095/s0369lre,46,male,yes,Myocardial infarction
+patient095/s0373lre,../ptbdb/patient095/s0373lre,46,male,yes,Myocardial infarction
+patient095/s0377lre,../ptbdb/patient095/s0377lre,46,male,yes,Myocardial infarction
+patient095/s0417lre,../ptbdb/patient095/s0417lre,46,male,yes,Myocardial infarction
+patient096/s0379lre,../ptbdb/patient096/s0379lre,43,male,yes,Myocardial infarction
+patient096/s0381lre,../ptbdb/patient096/s0381lre,43,male,yes,Myocardial infarction
+patient096/s0385lre,../ptbdb/patient096/s0385lre,43,male,yes,Myocardial infarction
+patient096/s0395lre,../ptbdb/patient096/s0395lre,43,male,yes,Myocardial infarction
+patient097/s0380lre,../ptbdb/patient097/s0380lre,68,male,no,Myocardial infarction
+patient097/s0382lre,../ptbdb/patient097/s0382lre,68,male,no,Myocardial infarction
+patient097/s0384lre,../ptbdb/patient097/s0384lre,68,male,no,Myocardial infarction
+patient097/s0394lre,../ptbdb/patient097/s0394lre,68,male,no,Myocardial infarction
+patient098/s0386lre,../ptbdb/patient098/s0386lre,63,female,no,Myocardial infarction
+patient098/s0389lre,../ptbdb/patient098/s0389lre,63,female,no,Myocardial infarction
+patient098/s0398lre,../ptbdb/patient098/s0398lre,63,female,no,Myocardial infarction
+patient098/s0409lre,../ptbdb/patient098/s0409lre,63,female,no,Myocardial infarction
+patient099/s0387lre,../ptbdb/patient099/s0387lre,52,male,yes,Myocardial infarction
+patient099/s0388lre,../ptbdb/patient099/s0388lre,52,male,yes,Myocardial infarction
+patient099/s0397lre,../ptbdb/patient099/s0397lre,52,male,yes,Myocardial infarction
+patient099/s0419lre,../ptbdb/patient099/s0419lre,52,male,yes,Myocardial infarction
+patient100/s0399lre,../ptbdb/patient100/s0399lre,72,female,no,Myocardial infarction
+patient100/s0401lre,../ptbdb/patient100/s0401lre,72,female,no,Myocardial infarction
+patient100/s0407lre,../ptbdb/patient100/s0407lre,72,female,no,Myocardial infarction
+patient101/s0400lre,../ptbdb/patient101/s0400lre,57,male,yes,Myocardial infarction
+patient101/s0410lre,../ptbdb/patient101/s0410lre,57,male,yes,Myocardial infarction
+patient101/s0414lre,../ptbdb/patient101/s0414lre,57,male,yes,Myocardial infarction
+patient102/s0416lre,../ptbdb/patient102/s0416lre,72,female,no,Myocardial infarction
+patient103/s0332lre,../ptbdb/patient103/s0332lre,52,male,unknown,Myocardial infarction
+patient104/s0306lre,../ptbdb/patient104/s0306lre,58,male,unknown,Healthy
+patient105/s0303lre,../ptbdb/patient105/s0303lre,32,female,unknown,Healthy
+patient106/s0030_re,../ptbdb/patient106/s0030_re,46,male,unknown,Valvular heart disease
+patient107/s0199_re,../ptbdb/patient107/s0199_re,41,female,unknown,Valvular heart disease
+patient108/s0013_re,../ptbdb/patient108/s0013_re,77,male,no,Myocardial infarction
+patient109/s0349lre,../ptbdb/patient109/s0349lre,17,male,no,Dysrhythmia
+patient110/s0003_re,../ptbdb/patient110/s0003_re,n/a,n/a,no,Valvular heart disease
+patient111/s0203_re,../ptbdb/patient111/s0203_re,75,male,no,Myocardial infarction
+patient112/s0169_re,../ptbdb/patient112/s0169_re,59,male,no,Dysrhythmia
+patient113/s0018cre,../ptbdb/patient113/s0018cre,65,female,no,Dysrhythmia
+patient113/s0018lre,../ptbdb/patient113/s0018lre,65,female,no,Dysrhythmia
+patient114/s0012_re,../ptbdb/patient114/s0012_re,68,female,no,Valvular heart disease
+patient115/s0023_re,../ptbdb/patient115/s0023_re,74,female,no,Heart failure (NYHA 2)
+patient116/s0302lre,../ptbdb/patient116/s0302lre,54,male,unknown,Healthy
+patient117/s0291lre,../ptbdb/patient117/s0291lre,37,male,unknown,Healthy
+patient117/s0292lre,../ptbdb/patient117/s0292lre,37,male,unknown,Healthy
+patient118/s0183_re,../ptbdb/patient118/s0183_re,70,male,yes,Heart failure (NYHA 3)
+patient119/s0001_re,../ptbdb/patient119/s0001_re,83,n/a,n/a,Healthy
+patient120/s0331lre,../ptbdb/patient120/s0331lre,72,male,no,Myocardial infarction
+patient121/s0311lre,../ptbdb/patient121/s0311lre,69,female,unknown,Healthy
+patient122/s0312lre,../ptbdb/patient122/s0312lre,68,male,unknown,Healthy
+patient123/s0224_re,../ptbdb/patient123/s0224_re,61,female,no,Heart failure (NYHA 4)
+patient125/s0006_re,../ptbdb/patient125/s0006_re,n/a,n/a,n/a,Healthy
+patient126/s0154_re,../ptbdb/patient126/s0154_re,62,male,no,Palpitation
+patient127/s0342lre,../ptbdb/patient127/s0342lre,32,female,no,Cardiomyopathy
+patient127/s0383lre,../ptbdb/patient127/s0383lre,32,female,no,Cardiomyopathy
+patient128/s0182_re,../ptbdb/patient128/s0182_re,63,male,no,Myocardial infarction
+patient129/s0189_re,../ptbdb/patient129/s0189_re,53,male,yes,Cardiomyopathy
+patient130/s0166_re,../ptbdb/patient130/s0166_re,75,male,no,Stable angina
+patient131/s0273lre,../ptbdb/patient131/s0273lre,26,male,unknown,Healthy
+patient133/s0393lre,../ptbdb/patient133/s0393lre,31,male,yes,Dysrhythmia
+patient135/s0334lre,../ptbdb/patient135/s0334lre,54,female,no,Myocardial infarction
+patient136/s0205_re,../ptbdb/patient136/s0205_re,51,male,n/a,Healthy
+patient137/s0392lre,../ptbdb/patient137/s0392lre,52,male,yes,Cardiomyopathy
+patient138/s0005_re,../ptbdb/patient138/s0005_re,84,male,no,Myocardial infarction
+patient139/s0223_re,../ptbdb/patient139/s0223_re,85,female,no,Myocardial infarction
+patient140/s0019_re,../ptbdb/patient140/s0019_re,75,female,no,Myocardial infarction
+patient141/s0307lre,../ptbdb/patient141/s0307lre,46,male,no,Myocardial infarction
+patient142/s0351lre,../ptbdb/patient142/s0351lre,54,male,yes,Myocardial infarction
+patient143/s0333lre,../ptbdb/patient143/s0333lre,67,male,n/a,Healthy
+patient144/s0341lre,../ptbdb/patient144/s0341lre,57,female,n/a,Healthy
+patient145/s0201_re,../ptbdb/patient145/s0201_re,63,male,no,Myocardial infarction
+patient146/s0007_re,../ptbdb/patient146/s0007_re,20,n/a,n/a,Healthy
+patient147/s0211_re,../ptbdb/patient147/s0211_re,81,male,yes,Dysrhythmia
+patient148/s0335lre,../ptbdb/patient148/s0335lre,58,male,yes,Myocardial infarction
+patient149/s0202are,../ptbdb/patient149/s0202are,53,male,no,Myocardial infarction
+patient149/s0202bre,../ptbdb/patient149/s0202bre,53,male,no,Myocardial infarction
+patient150/s0287lre,../ptbdb/patient150/s0287lre,36,male,unknown,Healthy
+patient151/s0206_re,../ptbdb/patient151/s0206_re,66,female,no,Dysrhythmia
+patient152/s0004_re,../ptbdb/patient152/s0004_re,79,female,no,Myocardial infarction
+patient153/s0391lre,../ptbdb/patient153/s0391lre,52,male,unknown,Dysrhythmia
+patient154/s0170_re,../ptbdb/patient154/s0170_re,n/a,n/a,n/a,Healthy
+patient155/s0301lre,../ptbdb/patient155/s0301lre,37,male,unknown,Healthy
+patient156/s0299lre,../ptbdb/patient156/s0299lre,17,male,unknown,Healthy
+patient157/s0338lre,../ptbdb/patient157/s0338lre,87,male,yes,Dysrhythmia
+patient158/s0294lre,../ptbdb/patient158/s0294lre,64,male,no,Myocardial infarction
+patient158/s0295lre,../ptbdb/patient158/s0295lre,64,male,no,Myocardial infarction
+patient159/s0390lre,../ptbdb/patient159/s0390lre,73,male,yes,Hypertrophy
+patient160/s0222_re,../ptbdb/patient160/s0222_re,55,male,yes,Myocardial infarction
+patient162/s0193_re,../ptbdb/patient162/s0193_re,n/a,n/a,n/a,Healthy
+patient163/s0034_re,../ptbdb/patient163/s0034_re,68,female,no,Myocardial infarction
+patient164/s0024are,../ptbdb/patient164/s0024are,87,female,n/a,Healthy
+patient164/s0024bre,../ptbdb/patient164/s0024bre,87,female,n/a,Healthy
+patient165/s0322lre,../ptbdb/patient165/s0322lre,26,male,unknown,Healthy
+patient165/s0323lre,../ptbdb/patient165/s0323lre,26,male,unknown,Healthy
+patient166/s0275lre,../ptbdb/patient166/s0275lre,n/a,male,unknown,Healthy
+patient167/s0200_re,../ptbdb/patient167/s0200_re,80,female,no,Cardiomyopathy
+patient168/s0032_re,../ptbdb/patient168/s0032_re,75,female,no,Dysrhythmia
+patient168/s0033_re,../ptbdb/patient168/s0033_re,75,female,no,Dysrhythmia
+patient169/s0328lre,../ptbdb/patient169/s0328lre,54,female,unknown,Healthy
+patient169/s0329lre,../ptbdb/patient169/s0329lre,54,female,unknown,Healthy
+patient170/s0274lre,../ptbdb/patient170/s0274lre,n/a,male,unknown,Healthy
+patient171/s0364lre,../ptbdb/patient171/s0364lre,64,female,unknown,Bundle branch block
+patient172/s0304lre,../ptbdb/patient172/s0304lre,50,male,unknown,Healthy
+patient173/s0305lre,../ptbdb/patient173/s0305lre,57,female,unknown,Healthy
+patient174/s0300lre,../ptbdb/patient174/s0300lre,26,male,unknown,Healthy
+patient174/s0324lre,../ptbdb/patient174/s0324lre,26,male,unknown,Healthy
+patient174/s0325lre,../ptbdb/patient174/s0325lre,26,male,unknown,Healthy
+patient175/s0009_re,../ptbdb/patient175/s0009_re,57,female,unknown,Bundle branch block
+patient176/s0188_re,../ptbdb/patient176/s0188_re,79,female,n/a,Healthy
+patient177/s0366lre,../ptbdb/patient177/s0366lre,35,female,no,Dysrhythmia
+patient178/s0011_re,../ptbdb/patient178/s0011_re,85,female,n/a,Healthy
+patient179/s0176_re,../ptbdb/patient179/s0176_re,77,female,n/a,Healthy
+patient180/s0374lre,../ptbdb/patient180/s0374lre,37,male,unknown,Healthy
+patient180/s0475_re,../ptbdb/patient180/s0475_re,37,male,unknown,Healthy
+patient180/s0476_re,../ptbdb/patient180/s0476_re,37,male,unknown,Healthy
+patient180/s0477_re,../ptbdb/patient180/s0477_re,37,male,unknown,Healthy
+patient180/s0490_re,../ptbdb/patient180/s0490_re,37,male,unknown,Healthy
+patient180/s0545_re,../ptbdb/patient180/s0545_re,37,male,unknown,Healthy
+patient180/s0561_re,../ptbdb/patient180/s0561_re,37,male,unknown,Healthy
+patient181/s0204are,../ptbdb/patient181/s0204are,n/a,n/a,n/a,Healthy
+patient181/s0204bre,../ptbdb/patient181/s0204bre,n/a,n/a,n/a,Healthy
+patient182/s0308lre,../ptbdb/patient182/s0308lre,29,male,unknown,Healthy
+patient183/s0175_re,../ptbdb/patient183/s0175_re,57,female,no,Myocardial infarction
+patient184/s0363lre,../ptbdb/patient184/s0363lre,81,female,no,Healthy
+patient185/s0336lre,../ptbdb/patient185/s0336lre,22,female,no,Healthy
+patient186/s0293lre,../ptbdb/patient186/s0293lre,45,male,n/a,Healthy
+patient187/s0207_re,../ptbdb/patient187/s0207_re,62,male,unknown,Dysrhythmia
+patient188/s0365lre,../ptbdb/patient188/s0365lre,51,male,no,Valvular heart disease
+patient189/s0309lre,../ptbdb/patient189/s0309lre,61,male,yes,Myocardial infarction
+patient190/s0040_re,../ptbdb/patient190/s0040_re,n/a,n/a,n/a,Healthy
+patient190/s0041_re,../ptbdb/patient190/s0041_re,n/a,n/a,n/a,Healthy
+patient191/s0340lre,../ptbdb/patient191/s0340lre,60,male,yes,Stable angina
+patient192/s0048_re,../ptbdb/patient192/s0048_re,63,female,n/a,Healthy
+patient193/s0008_re,../ptbdb/patient193/s0008_re,59,female,no,Myocardial infarction
+patient194/s0310lre,../ptbdb/patient194/s0310lre,67,male,n/a,Healthy
+patient195/s0337lre,../ptbdb/patient195/s0337lre,71,female,unknown,Myocardial infarction
+patient196/s0002_re,../ptbdb/patient196/s0002_re,84,female,no,Unstable angina
+patient197/s0350lre,../ptbdb/patient197/s0350lre,51,male,no,Myocardial infarction
+patient197/s0403lre,../ptbdb/patient197/s0403lre,51,male,no,Myocardial infarction
+patient198/s0402lre,../ptbdb/patient198/s0402lre,n/a,female,unknown,Healthy
+patient198/s0415lre,../ptbdb/patient198/s0415lre,n/a,female,unknown,Healthy
+patient199/s0404lre,../ptbdb/patient199/s0404lre,n/a,male,unknown,Bundle branch block
+patient200/s0405lre,../ptbdb/patient200/s0405lre,n/a,male,n/a,Healthy
+patient201/s0420_re,../ptbdb/patient201/s0420_re,39,male,unknown,Cardiomyopathy
+patient201/s0423_re,../ptbdb/patient201/s0423_re,39,male,unknown,Cardiomyopathy
+patient202/s0421_re,../ptbdb/patient202/s0421_re,29,male,unknown,Bundle branch block
+patient202/s0422_re,../ptbdb/patient202/s0422_re,29,male,unknown,Bundle branch block
+patient203/s0424_re,../ptbdb/patient203/s0424_re,32,male,no,Bundle branch block
+patient204/s0425_re,../ptbdb/patient204/s0425_re,67,male,unknown,Bundle branch block
+patient205/s0426_re,../ptbdb/patient205/s0426_re,63,male,no,Myocardial infarction
+patient206/s0427_re,../ptbdb/patient206/s0427_re,32,male,no,Bundle branch block
+patient207/s0428_re,../ptbdb/patient207/s0428_re,46,male,yes,Myocardial infarction
+patient208/s0429_re,../ptbdb/patient208/s0429_re,46,male,no,Bundle branch block
+patient208/s0430_re,../ptbdb/patient208/s0430_re,46,male,no,Bundle branch block
+patient209/s0431_re,../ptbdb/patient209/s0431_re,51,male,yes,Bundle branch block
+patient210/s0432_re,../ptbdb/patient210/s0432_re,56,male,no,Hypertrophy
+patient211/s0433_re,../ptbdb/patient211/s0433_re,68,male,yes,Myocardial infarction
+patient212/s0434_re,../ptbdb/patient212/s0434_re,66,male,no,Hypertrophy
+patient213/s0435_re,../ptbdb/patient213/s0435_re,58,male,no,Bundle branch block
+patient214/s0436_re,../ptbdb/patient214/s0436_re,35,male,unknown,Healthy
+patient215/s0437_re,../ptbdb/patient215/s0437_re,82,male,no,Cardiomyopathy
+patient216/s0438_re,../ptbdb/patient216/s0438_re,73,female,no,Hypertrophy
+patient217/s0439_re,../ptbdb/patient217/s0439_re,62,female,no,Bundle branch block
+patient218/s0440_re,../ptbdb/patient218/s0440_re,70,male,no,Dysrhythmia
+patient219/s0441_re,../ptbdb/patient219/s0441_re,66,male,no,Bundle branch block
+patient220/s0442_re,../ptbdb/patient220/s0442_re,76,male,no,Bundle branch block
+patient221/s0443_re,../ptbdb/patient221/s0443_re,63,male,no,Hypertrophy
+patient222/s0444_re,../ptbdb/patient222/s0444_re,60,female,no,Cardiomyopathy
+patient223/s0445_re,../ptbdb/patient223/s0445_re,56,male,no,Myocardial infarction
+patient223/s0446_re,../ptbdb/patient223/s0446_re,56,male,no,Myocardial infarction
+patient224/s0447_re,../ptbdb/patient224/s0447_re,38,female,no,Valvular heart disease
+patient225/s0448_re,../ptbdb/patient225/s0448_re,56,female,no,Bundle branch block
+patient226/s0449_re,../ptbdb/patient226/s0449_re,62,male,no,Myocardial infarction
+patient227/s0450_re,../ptbdb/patient227/s0450_re,52,male,no,Hypertrophy
+patient228/s0451_re,../ptbdb/patient228/s0451_re,73,male,no,Bundle branch block
+patient229/s0452_re,../ptbdb/patient229/s0452_re,55,male,unknown,Healthy
+patient229/s0453_re,../ptbdb/patient229/s0453_re,55,male,unknown,Healthy
+patient230/s0454_re,../ptbdb/patient230/s0454_re,68,male,no,Myocardial infarction
+patient231/s0455_re,../ptbdb/patient231/s0455_re,57,male,no,Myocardial infarction
+patient232/s0456_re,../ptbdb/patient232/s0456_re,70,female,no,Cardiomyopathy
+patient233/s0457_re,../ptbdb/patient233/s0457_re,24,male,unknown,Healthy
+patient233/s0458_re,../ptbdb/patient233/s0458_re,24,male,unknown,Healthy
+patient233/s0459_re,../ptbdb/patient233/s0459_re,24,male,unknown,Healthy
+patient233/s0482_re,../ptbdb/patient233/s0482_re,24,male,unknown,Healthy
+patient233/s0483_re,../ptbdb/patient233/s0483_re,24,male,unknown,Healthy
+patient234/s0460_re,../ptbdb/patient234/s0460_re,34,male,unknown,Healthy
+patient235/s0461_re,../ptbdb/patient235/s0461_re,30,male,unknown,Healthy
+patient236/s0462_re,../ptbdb/patient236/s0462_re,25,female,unknown,Healthy
+patient236/s0463_re,../ptbdb/patient236/s0463_re,25,female,unknown,Healthy
+patient236/s0464_re,../ptbdb/patient236/s0464_re,25,female,unknown,Healthy
+patient237/s0465_re,../ptbdb/patient237/s0465_re,47,male,unknown,Healthy
+patient238/s0466_re,../ptbdb/patient238/s0466_re,29,male,unknown,Healthy
+patient239/s0467_re,../ptbdb/patient239/s0467_re,59,male,unknown,Healthy
+patient240/s0468_re,../ptbdb/patient240/s0468_re,28,male,unknown,Healthy
+patient241/s0469_re,../ptbdb/patient241/s0469_re,33,male,unknown,Healthy
+patient241/s0470_re,../ptbdb/patient241/s0470_re,33,male,unknown,Healthy
+patient242/s0471_re,../ptbdb/patient242/s0471_re,28,female,unknown,Healthy
+patient243/s0472_re,../ptbdb/patient243/s0472_re,52,female,unknown,Healthy
+patient244/s0473_re,../ptbdb/patient244/s0473_re,44,male,unknown,Healthy
+patient245/s0474_re,../ptbdb/patient245/s0474_re,30,male,unknown,Healthy
+patient245/s0480_re,../ptbdb/patient245/s0480_re,30,male,unknown,Healthy
+patient246/s0478_re,../ptbdb/patient246/s0478_re,54,male,unknown,Healthy
+patient247/s0479_re,../ptbdb/patient247/s0479_re,48,female,unknown,Healthy
+patient248/s0481_re,../ptbdb/patient248/s0481_re,64,male,unknown,Healthy
+patient249/s0484_re,../ptbdb/patient249/s0484_re,46,male,no,Myocarditis
+patient250/s0485_re,../ptbdb/patient250/s0485_re,53,male,no,Hypertrophy
+patient251/s0486_re,../ptbdb/patient251/s0486_re,40,male,unknown,Healthy
+patient251/s0503_re,../ptbdb/patient251/s0503_re,40,male,unknown,Healthy
+patient251/s0506_re,../ptbdb/patient251/s0506_re,40,male,unknown,Healthy
+patient252/s0487_re,../ptbdb/patient252/s0487_re,54,male,unknown,Healthy
+patient253/s0488_re,../ptbdb/patient253/s0488_re,62,male,no,Cardiomyopathy
+patient254/s0489_re,../ptbdb/patient254/s0489_re,57,male,no,Cardiomyopathy
+patient255/s0491_re,../ptbdb/patient255/s0491_re,69,male,unknown,Healthy
+patient256/s0492_re,../ptbdb/patient256/s0492_re,64,female,no,Cardiomyopathy
+patient257/s0493_re,../ptbdb/patient257/s0493_re,68,male,no,Cardiomyopathy
+patient258/s0494_re,../ptbdb/patient258/s0494_re,42,male,no,Dysrhythmia
+patient259/s0495_re,../ptbdb/patient259/s0495_re,58,female,unknown,Myocardial infarction
+patient260/s0496_re,../ptbdb/patient260/s0496_re,n/a,male,unknown,Healthy
+patient261/s0497_re,../ptbdb/patient261/s0497_re,51,male,unknown,Myocardial infarction
+patient262/s0498_re,../ptbdb/patient262/s0498_re,41,female,unknown,Cardiomyopathy
+patient263/s0499_re,../ptbdb/patient263/s0499_re,37,male,unknown,Healthy
+patient264/s0500_re,../ptbdb/patient264/s0500_re,45,male,unknown,Healthy
+patient265/s0501_re,../ptbdb/patient265/s0501_re,57,male,unknown,Myocardial infarction
+patient266/s0502_re,../ptbdb/patient266/s0502_re,68,male,unknown,Healthy
+patient267/s0504_re,../ptbdb/patient267/s0504_re,67,female,unknown,Healthy
+patient268/s0505_re,../ptbdb/patient268/s0505_re,55,male,unknown,Myocardial infarction
+patient269/s0508_re,../ptbdb/patient269/s0508_re,61,male,unknown,Myocarditis
+patient270/s0507_re,../ptbdb/patient270/s0507_re,60,male,unknown,Myocardial infarction
+patient271/s0509_re,../ptbdb/patient271/s0509_re,41,male,unknown,Myocarditis
+patient272/s0510_re,../ptbdb/patient272/s0510_re,61,male,unknown,Myocarditis
+patient273/s0511_re,../ptbdb/patient273/s0511_re,69,male,unknown,Myocardial infarction
+patient274/s0512_re,../ptbdb/patient274/s0512_re,57,male,unknown,Myocardial infarction
+patient275/s0513_re,../ptbdb/patient275/s0513_re,48,male,n/a,Healthy
+patient276/s0526_re,../ptbdb/patient276/s0526_re,n/a,male,unknown,Healthy
+patient277/s0527_re,../ptbdb/patient277/s0527_re,n/a,male,unknown,Healthy
+patient278/s0528_re,../ptbdb/patient278/s0528_re,62,male,n/a,Healthy
+patient278/s0529_re,../ptbdb/patient278/s0529_re,62,male,n/a,Healthy
+patient278/s0530_re,../ptbdb/patient278/s0530_re,62,male,n/a,Healthy
+patient279/s0531_re,../ptbdb/patient279/s0531_re,35,female,no,Healthy
+patient279/s0532_re,../ptbdb/patient279/s0532_re,35,female,no,Healthy
+patient279/s0533_re,../ptbdb/patient279/s0533_re,35,female,no,Healthy
+patient279/s0534_re,../ptbdb/patient279/s0534_re,35,female,no,Healthy
+patient280/s0535_re,../ptbdb/patient280/s0535_re,67,male,unknown,Myocardial infarction
+patient281/s0537_re,../ptbdb/patient281/s0537_re,68,male,n/a,Healthy
+patient282/s0539_re,../ptbdb/patient282/s0539_re,61,male,unknown,Myocardial infarction
+patient283/s0542_re,../ptbdb/patient283/s0542_re,82,male,unknown,Myocardial infarction
+patient284/s0543_re,../ptbdb/patient284/s0543_re,48,male,unknown,Healthy
+patient284/s0551_re,../ptbdb/patient284/s0551_re,48,male,unknown,Healthy
+patient284/s0552_re,../ptbdb/patient284/s0552_re,48,male,unknown,Healthy
+patient285/s0544_re,../ptbdb/patient285/s0544_re,n/a,,n/a,Healthy
+patient286/s0546_re,../ptbdb/patient286/s0546_re,56,male,unknown,Dysrhythmia
+patient287/s0547_re,../ptbdb/patient287/s0547_re,78,female,unknown,Myocardial infarction
+patient287/s0548_re,../ptbdb/patient287/s0548_re,78,female,unknown,Myocardial infarction
+patient288/s0549_re,../ptbdb/patient288/s0549_re,67,male,unknown,Cardiomyopathy
+patient289/s0550_re,../ptbdb/patient289/s0550_re,69,female,unknown,Cardiomyopathy
+patient290/s0553_re,../ptbdb/patient290/s0553_re,60,male,unknown,Myocardial infarction
+patient291/s0554_re,../ptbdb/patient291/s0554_re,69,male,unknown,Myocardial infarction
+patient292/s0555_re,../ptbdb/patient292/s0555_re,66,male,unknown,Myocardial infarction
+patient292/s0556_re,../ptbdb/patient292/s0556_re,66,male,unknown,Myocardial infarction
+patient293/s0557_re,../ptbdb/patient293/s0557_re,75,male,unknown,Myocardial infarction
+patient293/s0558_re,../ptbdb/patient293/s0558_re,75,male,unknown,Myocardial infarction
+patient294/s0559_re,../ptbdb/patient294/s0559_re,61,female,unknown,Myocardial infarction

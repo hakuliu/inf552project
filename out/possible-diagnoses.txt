@@ -1,0 +1,14 @@
+Myocardial infarction
+Healthy
+Valvular heart disease
+Dysrhythmia
+Heart failure (NYHA 2)
+Heart failure (NYHA 3)
+Heart failure (NYHA 4)
+Palpitation
+Cardiomyopathy
+Stable angina
+Hypertrophy
+Bundle branch block
+Unstable angina
+Myocarditis
