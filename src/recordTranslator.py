@@ -10,19 +10,22 @@ def extractPatientAttributes(recordheader):
     :param record: sample record read from wfdb.rdsamp
     :return: a dictionary of attribute - value
     '''
+    keys = []
     attr = []
+
     comments = recordheader.comments
     for comment in comments:
         if comment.strip().startswith('Smoker'):
-            attr.extend(comment.split(':')[1].split(','))
+            keys.append('smoker')
+            attr.append(comment.split(':')[1].strip())
         if comment.strip().startswith('age'):
-            attr.extend(comment.split(':')[1].split(','))
+            keys.append('age')
+            attr.append(comment.split(':')[1].strip())
         if comment.strip().startswith('sex'):
-            attr.extend(comment.split(':')[1].split(','))
+            keys.append('sex')
+            attr.append(comment.split(':')[1].strip())
 
-    attr = map(str.strip, attr)
-
-    return attr
+    return dict(zip(keys, attr))
 
 def extratPatientDiagnoses(recordheader):
     '''
@@ -30,16 +33,15 @@ def extratPatientDiagnoses(recordheader):
     :param record: sample record read from wfdb.rdsamp
     :return: a list of diagnoses pertaining to this patient
     '''
-    diag = []
+    diag = ""
     comments = recordheader.comments
     for comment in comments:
         if 'Reason for admission' in comment:# or 'Additional diagnoses' in comment:
-            diag.extend(comment.split(':')[1].split(','))
-    diag = map(str.strip, diag)
+            diag = (comment.split(':')[1].strip())#single value for now
 
-    for i in range(len(diag)):
-        if('Healthy' in diag[i] or 'n/a' in diag[i]):
-            diag[i] = 'Healthy'
+
+    if('Healthy' in diag or 'n/a' in diag):
+        diag = 'Healthy'
 
     return diag
 

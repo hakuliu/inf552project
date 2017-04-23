@@ -26,4 +26,22 @@ def separateRecords(recordsFile='../ptbdb/RECORDS', outTraining='../out/trainRec
     o.writelines(testSet)
     print('done.')
 
-separateRecords()
+def getIterableTrainingRecords(recordsFile='../out/trainRecords'):
+    return getIterableRecords(recordsFile)
+
+def getIterableRecords(recordsFile):
+    f = open(recordsFile, 'r')
+    result = []
+    for line in f:
+        result.append(line.strip)
+    return result
+
+def getIterableTestRecords(recordsFile='../out/testRecords'):
+    getIterableRecords(recordsFile)
+
+def getAllDiagnosis():
+    d_f = open('../out/possible-diagnoses', 'r')
+    result = []
+    for line in d_f:
+        result.append(line.strip())
+    return result
