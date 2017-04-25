@@ -15,6 +15,7 @@ class FeedForwardNetwork:
 
     def constructNetwork(self):
         currentlayer = []
+        print('constructing input layer of %d nodes' % self.indim)
         for i in range(self.indim):
             node = neuralnetwork.NeuralNode()
             self.innodes.append(node)

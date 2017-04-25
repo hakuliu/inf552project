@@ -5,13 +5,22 @@ contained within a function here.
 '''
 import recordManager as records
 import hw5.feedforward as ff
+import customnntrainer as fft
+
+NUM_GRAPHS = 15
 
 def trialFullFeedForward():
     trainFiles = records.getIterableTrainingRecords()
     testFiles = records.getIterableTestRecords()
     diagnoses = records.getAllDiagnosis()
 
-    ffn = ff.FeedForwardNetwork(7000, [4000, 1000], len(diagnoses))
+    in_resolution = 500
+
+    ffn = ff.FeedForwardNetwork(NUM_GRAPHS * in_resolution, len(diagnoses), [300])
     ffn.constructNetwork()
+    trainer = fft.EcgTrainer(trainFiles[300:], ffn, diagnoses, in_resolution, testList=testFiles)
+    trainer.train(20)
 
 
+
+trialFullFeedForward()

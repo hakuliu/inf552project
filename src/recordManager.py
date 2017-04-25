@@ -33,14 +33,14 @@ def getIterableRecords(recordsFile):
     f = open(recordsFile, 'r')
     result = []
     for line in f:
-        result.append(line.strip)
+        result.append(line.strip())
     return result
 
 def getIterableTestRecords(recordsFile='../out/testRecords'):
     getIterableRecords(recordsFile)
 
 def getAllDiagnosis():
-    d_f = open('../out/possible-diagnoses', 'r')
+    d_f = open('../out/possible-diagnoses.txt', 'r')
     result = []
     for line in d_f:
         result.append(line.strip())
