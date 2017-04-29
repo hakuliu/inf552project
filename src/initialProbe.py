@@ -1,10 +1,8 @@
-
-import wfdb
-import recordTranslator as rutil
-import numpy as np
-import os
-from IPython.display import display
 import matplotlib.pyplot as plt
+import wfdb
+
+from src.recordutil import recordTranslator as rutil
+
 
 def writeAllDiagnosisToFile():
     #figure out what all possible diagnosis contained within this database
@@ -37,7 +35,7 @@ def showGraph(pat='patient002/s0015lre'):
         data = rutil.extractGraph(i, record)
         plt.subplot(nrow, ncol, i + 1)
         plt.title("lead " + record.signame[i])
-        plt.plot(data[0:2000])
+        plt.plot(data[3000:5000])
     plt.show()
 
 def writePatientData():
@@ -59,4 +57,4 @@ def writePatientData():
         o.write(diagnoses[0])
         o.write('\n')
 
-writePatientData()
+showGraph(pat='patient002/s0015lre')

@@ -37,7 +37,7 @@ def getIterableRecords(recordsFile):
     return result
 
 def getIterableTestRecords(recordsFile='../out/testRecords'):
-    getIterableRecords(recordsFile)
+    return getIterableRecords(recordsFile)
 
 def getAllDiagnosis():
     d_f = open('../out/possible-diagnoses.txt', 'r')
