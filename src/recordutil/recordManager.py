@@ -29,7 +29,7 @@ def separateRecords(recordsFile='../ptbdb/RECORDS', outTraining='../out/trainRec
 def getIterableTrainingRecords(recordsFile='../out/trainRecords'):
     return getIterableRecords(recordsFile)
 
-def getIterableRecords(recordsFile):
+def getIterableRecords(recordsFile='../ptbdb/RECORDS'):
     f = open(recordsFile, 'r')
     result = []
     for line in f:

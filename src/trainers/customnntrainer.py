@@ -4,15 +4,18 @@ import numpy as np
 import wfdb
 
 import src.recordutil.recordTranslator as rutil
+import src.recordutil.recordFilter as filter
 
+NUMHEARTBEATS = 2
 
 class EcgTrainer:
-    def __init__(self, recordlist, feedforward, diagnoses, inres, testList=None):
+    def __init__(self, recordlist, feedforward, diagnoses, inres, graphIndeces, testList=None):
         self.trainingList = recordlist
         self.ffn = feedforward
         self.diagnoses = diagnoses
         self.testList = testList
         self.inres = inres
+        self.graphs = graphIndeces
         if testList:
             self.testfile = open('../out/feedforwardtest.csv', 'w')
 
@@ -28,7 +31,7 @@ class EcgTrainer:
         ers = []
         numcorrect = 0
         for rec in self.testList:
-            print('testing ' + rec)
+            #print('testing ' + rec)
             record = wfdb.rdsamp('../ptbdb/'+rec)
             (sqerr, correct) = self.error(record)
             ers.append(sqerr)
@@ -53,16 +56,15 @@ class EcgTrainer:
 
     def prepareInputs(self, record):
         result = []
-        for i in range(record.nsig):
-            data = rutil.extractGraph(i, record)
-            result.extend(data[0:self.inres])
+        data = filter.normalizeData(record, NUMHEARTBEATS, self.inres)
+        for i in self.graphs:
+            result.extend(data[i])
         return result
 
     def getResult(self, record):
          result = np.zeros(len(self.diagnoses))
          d = rutil.extratPatientDiagnoses(record)
          index = self.diagnoses.index(d)
-         print('...has ' + d + ', ' + str(index))
          result[index] = 1.
          return (result, index)
 
@@ -71,8 +73,6 @@ class EcgTrainer:
         self.ffn.feedforward()
         (resArray, resIndex) = self.getResult(record)
         predictIndex = self.getFFNLargestOut()
-        print('Prediction was %d' % predictIndex)
-        print('Real result was %d' % resIndex)
         resultCorrect = resIndex == predictIndex
         sqerr = self.getFFNSquaredError(resArray)
 

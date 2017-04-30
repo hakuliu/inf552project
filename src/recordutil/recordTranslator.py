@@ -3,6 +3,8 @@ This package serves to provide a bunch of utility files that allows us to take s
 into data that is more convenient for our analysis, and easier for us to understand.
 '''
 
+import matplotlib.pyplot as plt
+
 def extractPatientAttributes(recordheader):
     '''
     uses the comments section(?) of the record to parse out relevant information
@@ -63,3 +65,19 @@ def extractGraph(index, record):
     :return: 
     '''
     return extractAllGraphs(record)[:, index]
+
+def showGraph(record, start=0, end=-1):
+    nsig = record.nsig
+    plt.figure(1)
+    ncol = 2
+    nrow = round(nsig / 2.0)
+
+    if end < 0:
+        end = record.siglen
+
+    for i in range(nsig):
+        data = extractGraph(i, record)
+        plt.subplot(nrow, ncol, i + 1)
+        plt.title("lead " + record.signame[i])
+        plt.plot(data[start:end])
+    plt.show()

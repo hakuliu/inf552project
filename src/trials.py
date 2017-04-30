@@ -14,13 +14,13 @@ def trialFullFeedForward():
     testFiles = records.getIterableTestRecords()
     diagnoses = records.getAllDiagnosis()
 
-    in_resolution = 200
+    in_resolution = 800
+    useGraph = [12,13,14]
+    hidden = [500]
 
-    ffn = ff.FeedForwardNetwork(NUM_GRAPHS * in_resolution, len(diagnoses), [300])
+    ffn = ff.FeedForwardNetwork(len(useGraph) * in_resolution, len(diagnoses), hidden)
     ffn.constructNetwork()
-    trainer = fft.EcgTrainer(trainFiles[310:312], ffn, diagnoses, in_resolution, testList=testFiles[:2])
-    trainer.train(20)
-
-
+    trainer = fft.EcgTrainer(trainFiles, ffn, diagnoses, in_resolution, useGraph, testList=testFiles)
+    trainer.train(2000)
 
 trialFullFeedForward()
