@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import wfdb
 
 from src.recordutil import recordTranslator as rutil
+from src.recordutil import recordManager as rman
 
 
 def writeAllDiagnosisToFile():
@@ -11,10 +12,9 @@ def writeAllDiagnosisToFile():
     for line in f:
         rfile = '../ptbdb/' + line.strip();
         record = wfdb.rdheader(rfile)
-        diagnoses = rutil.extratPatientDiagnoses(record)
-        for diagnosis in diagnoses:
-            if not any(diagnosis in s for s in possible):
-                possible.append(diagnosis)
+        diagnosis = rutil.extratPatientDiagnoses(record)
+        if not any(diagnosis in s for s in possible):
+            possible.append(diagnosis)
 
     diagnosesfile = open('../out/possible-diagnoses.txt', 'w')
     for d in possible:
@@ -57,4 +57,7 @@ def writePatientData():
         o.write(diagnoses[0])
         o.write('\n')
 
-showGraph(pat='patient002/s0015lre')
+# record = wfdb.rdsamp('../ptbdb/patient002/s0015lre')
+# rutil.showGraph(record)
+
+#writeAllDiagnosisToFile()

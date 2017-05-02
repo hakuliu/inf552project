@@ -1,6 +1,7 @@
 import numpy
+import random
 
-def separateRecords(recordsFile='../ptbdb/RECORDS', outTraining='../out/trainRecords', outTesting='../out/testRecords', ratio=.75):
+def separateRecords(recordsFile='../ptbdb/RECORDS', outTraining='../out/trainRecords', outTesting='../out/testRecords', ratio=.70):
     '''
     In order to make sure we do not overfit the problem, we need to use a test set that is outside of our training set.
     Usually, to do this, we take our data, and divide it such that some of it is used for training and some for testing
@@ -14,6 +15,7 @@ def separateRecords(recordsFile='../ptbdb/RECORDS', outTraining='../out/trainRec
     for line in recFile:
         recordPaths.append(line.strip() + '\n')
     print('there were a total of %d records' % len(recordPaths))
+    random.shuffle(recordPaths)
     split = int(ratio * len(recordPaths))
     trainSet = recordPaths[:split]
     testSet = recordPaths[split:]

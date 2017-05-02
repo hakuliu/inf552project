@@ -11,7 +11,7 @@ class FeedForwardNetwork:
         self.innodes = []
         self.outnodes = []
         self.allLayers = []
-        self.learnrate = .1
+        self.learnrate = .3
 
     def constructNetwork(self):
         currentlayer = []

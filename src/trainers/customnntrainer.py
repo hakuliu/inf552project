@@ -1,5 +1,5 @@
 import math
-
+import random
 import numpy as np
 import wfdb
 
@@ -28,20 +28,28 @@ class EcgTrainer:
                 self.testSingleEpoch(i)
 
     def testSingleEpoch(self, i):
+        random.shuffle(self.testList)
         ers = []
         numcorrect = 0
+        numHealthyCorrect = 0
         for rec in self.testList:
             #print('testing ' + rec)
             record = wfdb.rdsamp('../ptbdb/'+rec)
-            (sqerr, correct) = self.error(record)
+            (sqerr, correct, healthyCorrect) = self.error(record)
             ers.append(sqerr)
             if correct: numcorrect += 1
+            if healthyCorrect: numHealthyCorrect += 1
         totalsqerr = math.sqrt(sum(ers))
         correctpercent = float(numcorrect) / len(self.testList)
-        self.testfile.write(str(i) + "," + str(totalsqerr) + "," + str(correctpercent) + "\n")
+        correctHealth = float(numHealthyCorrect) / len(self.testList)
+        print('square mean error: %.4f' % totalsqerr)
+        print('correct predictions: %.4f' % correctpercent)
+        print('correct healthy prediction: %.4f' % correctHealth)
+        self.testfile.write(str(i) + "," + str(totalsqerr) + "," + str(correctpercent) + "," + str(correctHealth) + "\n")
 
 
     def trainSingleEpoch(self):
+        random.shuffle(self.trainingList)
         for rec in self.trainingList:
             print('training on ' + rec)
             record = wfdb.rdsamp('../ptbdb/'+rec)
@@ -62,11 +70,14 @@ class EcgTrainer:
         return result
 
     def getResult(self, record):
-         result = np.zeros(len(self.diagnoses))
-         d = rutil.extratPatientDiagnoses(record)
-         index = self.diagnoses.index(d)
-         result[index] = 1.
-         return (result, index)
+        totallen = len(self.diagnoses) + 1
+        result = np.zeros(totallen)
+        d = rutil.extratPatientDiagnoses(record)
+        index = self.diagnoses.index(d)
+        result[index] = 1.
+        if 'Healthy' in d:
+            result[totallen - 1] = 1
+        return (result, index)
 
     def error(self, record):
         self.ffn.stageInputs(self.prepareInputs(record))
@@ -75,8 +86,10 @@ class EcgTrainer:
         predictIndex = self.getFFNLargestOut()
         resultCorrect = resIndex == predictIndex
         sqerr = self.getFFNSquaredError(resArray)
+        healthy = self.getHealthyPrediction()
+        healthyCorrect = resArray[-1] == healthy
 
-        return (sqerr, resultCorrect)
+        return (sqerr, resultCorrect, healthyCorrect)
 
     def getFFNSquaredError(self, resultArray):
         sqerrs = []
@@ -90,11 +103,13 @@ class EcgTrainer:
     def getFFNLargestOut(self):
         maxVal = 0
         maxInd = 0
-        for i in range(len(self.ffn.outnodes)):
+        for i in range(len(self.ffn.outnodes) - 1):
             node = self.ffn.outnodes[i]
             if node.x > maxVal:
                 maxVal = node.x
                 maxInd = i
         return maxInd
 
-
+    def getHealthyPrediction(self):
+        if self.ffn.outnodes[-1].x >= .5: return 1
+        else: return 0

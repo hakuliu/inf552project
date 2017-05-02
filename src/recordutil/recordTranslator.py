@@ -42,8 +42,12 @@ def extratPatientDiagnoses(recordheader):
             diag = (comment.split(':')[1].strip())#single value for now
 
 
-    if('Healthy' in diag or 'n/a' in diag):
+    if 'Healthy' in diag or 'n/a' in diag:
         diag = 'Healthy'
+    if 'Cardiomyopathy' in diag or 'Heart failure' in diag:
+        diag = 'Cardiomyopathy / Heart failure'
+    if 'Palpitation' in diag or 'angina' in diag:
+        diag = 'Miscellaneous'
 
     return diag
 

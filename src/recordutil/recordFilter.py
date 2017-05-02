@@ -5,12 +5,12 @@ import numpy
 import matplotlib.pyplot as plot
 
 PRIMARYLEAD = 12 #represent the first Frank Lead
-STARTPERCENT = .3 #Don't want to start from 0. because the initial signals might be noisy
+STARTPERCENT = .5 #Don't want to start from 0. because the initial signals might be noisy
 WINDOWSIZE = 400
 SEARCHSIZE = 3000
 GAUSSIZE = 15
 ZEROTHRESH = 0.005
-SPIKETHRESH = 0.01
+SPIKETHRESH = 0.007
 
 SEARCHSPIKE = 0
 SEARCHZERO = 1
