@@ -14,6 +14,8 @@ def separateRecords(recordsFile='../ptbdb/RECORDS', outTraining='../out/trainRec
     print('reading records file...')
     for line in recFile:
         recordPaths.append(line.strip() + '\n')
+    print('starting list from 300, since there are too many myocardial infarctions')
+    recordPaths = recordPaths[300:]
     print('there were a total of %d records' % len(recordPaths))
     random.shuffle(recordPaths)
     split = int(ratio * len(recordPaths))

@@ -6,7 +6,7 @@ import wfdb
 import src.recordutil.recordTranslator as rutil
 import src.recordutil.recordFilter as filter
 
-NUMHEARTBEATS = 2
+NUMHEARTBEATS = 4
 
 class EcgTrainer:
     def __init__(self, recordlist, feedforward, diagnoses, inres, graphIndeces, testList=None):

@@ -61,3 +61,5 @@ def writePatientData():
 # rutil.showGraph(record)
 
 #writeAllDiagnosisToFile()
+
+rman.separateRecords()

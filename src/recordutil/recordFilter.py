@@ -2,32 +2,49 @@ import recordTranslator as rutil
 import recordManager as rman
 import wfdb
 import numpy
+import random
 import matplotlib.pyplot as plot
 
-PRIMARYLEAD = 12 #represent the first Frank Lead
-STARTPERCENT = .5 #Don't want to start from 0. because the initial signals might be noisy
-WINDOWSIZE = 400
-SEARCHSIZE = 3000
-GAUSSIZE = 15
-ZEROTHRESH = 0.005
-SPIKETHRESH = 0.007
+RANDMIN = .1
+RANDMAX = .9
+WINDOWSIZE = 50
+SEARCHSIZE = 5000
+GAUSSIZE = 21
 
 SEARCHSPIKE = 0
 SEARCHZERO = 1
+VARTHRESH = .08
 
 def normalizeData(record, heartbeats=2, resolution=500):
-    (start, end) = getStartEndHeartbeats(record, heartbeats=heartbeats)
+
     result = []
-    for i in range(record.nsig):
-        result.append(getNormalizedData(rutil.extractGraph(i, record), resolution, start, end))
+    totalVar = 1
+    for t in range(10):
+        result = []
+        seed = random.triangular(RANDMIN, RANDMAX, RANDMIN + (RANDMAX - RANDMIN) / 2)
+        (start, end) = getStartEndHeartbeats(record, seed, heartbeats=heartbeats)
+        for i in range(record.nsig):
+            result.append(getARandomStandardizedData(rutil.extractGraph(i, record), resolution, start, end))
+        totalVar = getTotalVariance(result)
+        # print('try %d, var %.5f' % (t, totalVar))
+        if totalVar < VARTHRESH:
+            break;
+
 
     # plot.figure()
-    # plot.plot(result[12])
+    # plot.title(rutil.extratPatientDiagnoses(record))
+    # plot.plot(result[1])
     # plot.show()
 
     return result
 
-def getNormalizedData(data, resolution, start, end):
+def getTotalVariance(allGraphs):
+    variances = []
+    for g in allGraphs:
+        variances.append(numpy.var(g))
+    return numpy.mean(variances)
+
+def getARandomStandardizedData(data, resolution, start, end):
     increment = float(end - start) / resolution
     result = numpy.zeros(resolution)
     for i in range(resolution):
@@ -42,66 +59,73 @@ def averageData(data, x):
         s.append(data[start + i])
     return sum(s) / GAUSSIZE
 
-def getStartEndHeartbeats(record, heartbeats=2):
-    vars = getVariances(record)
-    state = SEARCHZERO
-    beatfound = 0
-    firstZero = -1
-    for i in range(len(vars)):
-        v = vars[i]
-        if firstZero == -1:
-            if v < ZEROTHRESH:
-                firstZero = i
-                state = SEARCHSPIKE
-        else:
-            if state == SEARCHSPIKE and v > SPIKETHRESH:
-                state = SEARCHZERO
-            elif state == SEARCHZERO and v < ZEROTHRESH:
-                state = SEARCHSPIKE
-                beatfound += 1
-        if beatfound >= heartbeats:
-            return (firstZero, i)
-    return (0,0)
+def getStartEndHeartbeats(record, seed, heartbeats=2):
+    variances = getVariances(record, seed)
+    ma = max(variances)
+    mi = min(variances)
+    maxthresh = mi + (ma - mi) * .5
+    minthresh = mi + (ma - mi) * .2
+
+    state = SEARCHSPIKE
+    firstPeak = 0
+    lastPeak = -1
+    beatLens = []
+
+    for i in range(len(variances)):
+        v = variances[i]
+        if state == SEARCHSPIKE and v > maxthresh:
+            state = SEARCHZERO
+        elif state == SEARCHZERO and v < minthresh:
+            state = SEARCHSPIKE
+            if lastPeak > 0:
+                beatLens.append(i - lastPeak)
+            else:
+                firstPeak = i
+            lastPeak = i
+    av = numpy.mean(beatLens)
+    start = firstPeak - (av / 2)
+    end = start + heartbeats * av
+    return (start,end)
 
 
 def getVariance(data):
     return numpy.var(data)
 
-def getVariances(record):
+def getVariances(record, seed):
 
     datalen = record.siglen
-    startIndex = int(datalen * STARTPERCENT)
-    xData = rutil.extractGraph(12, record)
-    yData = rutil.extractGraph(13, record)
-    zData = rutil.extractGraph(14, record)
+    startIndex = int(datalen * seed)
 
-    vars = numpy.zeros(SEARCHSIZE)
+    varians = numpy.zeros(SEARCHSIZE)
 
     for i in range(SEARCHSIZE):
-        start = startIndex + i
+        start = startIndex + i - WINDOWSIZE / 2
         end = start + WINDOWSIZE
-        x = getVariance(xData[start:end])
-        y = getVariance(yData[start:end])
-        z = getVariance(zData[start:end])
-        vars[i] = sum([x,y,z]) / 3.
+        variantlist = []
+        for g in range(15):
+            x = getVariance(rutil.extractGraph(g, record)[start:end])
+            variantlist.append(x)
+        varians[i] = numpy.mean(variantlist)
 
+    # ma = max(varians)
+    # mi = min(varians)
+    # maxthresh = mi + (ma - mi) * .5
+    #
+    # m = numpy.ones(len(varians))
+    # m = maxthresh * m
     # plot.figure()
-    # plot.plot(vars)
+    # plot.plot(varians)
+    # plot.plot(m)
     # plot.show()
 
-    return vars
+    return varians
 
 def analyzeAllRecords():
-    allrecords = rman.getIterableTestRecords(recordsFile='../../ptbdb/RECORDS')
-    # for r in allrecords:
-    #     vars = getVariances(r)
-    #     print(r + ":")
-    #     print 'minvar was %.9f' % min(vars)
-    #     print 'maxvar was %.9f' % max(vars)
+    allrecords = rman.getIterableRecords(recordsFile='../../out/trainRecords')
 
     for r in allrecords:
         record = wfdb.rdsamp('../../ptbdb/' + r)
-        normalizeddata = normalizeData(record)
+        normalizeddata = normalizeData(record, heartbeats=4)
         # print(r + ":")
         # print 'start: %d, end %d', (start, end)
         # if (start != end):
