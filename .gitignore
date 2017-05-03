@@ -88,6 +88,7 @@ ENV/
 # datafiles
 ptbdb/
 sampledata/
+out/standardized-data/
 
 # Spyder project settings
 .spyderproject

@@ -34,7 +34,7 @@ class EcgTrainer:
         numHealthyCorrect = 0
         for rec in self.testList:
             #print('testing ' + rec)
-            record = wfdb.rdsamp('../ptbdb/'+rec)
+            record = wfdb.rdheader('../ptbdb/'+rec)
             (sqerr, correct, healthyCorrect) = self.error(record)
             ers.append(sqerr)
             if correct: numcorrect += 1
@@ -52,19 +52,19 @@ class EcgTrainer:
         random.shuffle(self.trainingList)
         for rec in self.trainingList:
             print('training on ' + rec)
-            record = wfdb.rdsamp('../ptbdb/'+rec)
-            self.trainSingleRecord(record)
+            record = wfdb.rdheader('../ptbdb/'+rec)
+            self.trainSingleRecord(rec, record)
 
-    def trainSingleRecord(self, record):
-        self.ffn.stageInputs(self.prepareInputs(record))
+    def trainSingleRecord(self, recname, record):
+        self.ffn.stageInputs(self.prepareInputs(recname))
         self.ffn.feedforward()
         self.ffn.stageErrors(self.getResult(record)[0])
         self.ffn.backPropagate()
         self.ffn.updateWeights()
 
-    def prepareInputs(self, record):
+    def prepareInputs(self,recname):
         result = []
-        data = filter.normalizeData(record, NUMHEARTBEATS, self.inres)
+        data = filter.loadOneData(recname)
         for i in self.graphs:
             result.extend(data[i])
         return result
@@ -79,8 +79,8 @@ class EcgTrainer:
             result[totallen - 1] = 1
         return (result, index)
 
-    def error(self, record):
-        self.ffn.stageInputs(self.prepareInputs(record))
+    def error(self, recname, record):
+        self.ffn.stageInputs(self.prepareInputs(recname))
         self.ffn.feedforward()
         (resArray, resIndex) = self.getResult(record)
         predictIndex = self.getFFNLargestOut()

@@ -19,16 +19,17 @@ def normalizeData(record, heartbeats=2, resolution=500):
 
     result = []
     totalVar = 1
-    for t in range(10):
+    for t in range(20):
         result = []
         seed = random.triangular(RANDMIN, RANDMAX, RANDMIN + (RANDMAX - RANDMIN) / 2)
         (start, end) = getStartEndHeartbeats(record, seed, heartbeats=heartbeats)
+        if start == end: continue
         for i in range(record.nsig):
             result.append(getARandomStandardizedData(rutil.extractGraph(i, record), resolution, start, end))
         totalVar = getTotalVariance(result)
         # print('try %d, var %.5f' % (t, totalVar))
         if totalVar < VARTHRESH:
-            break;
+            break
 
 
     # plot.figure()
@@ -53,11 +54,14 @@ def getARandomStandardizedData(data, resolution, start, end):
     return result
 
 def averageData(data, x):
-    start = int(x - GAUSSIZE / 2)
-    s = []
-    for i in range(GAUSSIZE):
-        s.append(data[start + i])
-    return sum(s) / GAUSSIZE
+    try:
+        start = int(x - GAUSSIZE / 2)
+        s = []
+        for i in range(GAUSSIZE):
+            s.append(data[start + i])
+        return numpy.mean(s)
+    except:
+        return 0
 
 def getStartEndHeartbeats(record, seed, heartbeats=2):
     variances = getVariances(record, seed)
@@ -82,6 +86,8 @@ def getStartEndHeartbeats(record, seed, heartbeats=2):
             else:
                 firstPeak = i
             lastPeak = i
+    if(len(beatLens) == 0) :
+        return (seed, 500*heartbeats)
     av = numpy.mean(beatLens)
     start = firstPeak - (av / 2)
     end = start + heartbeats * av
@@ -120,6 +126,35 @@ def getVariances(record, seed):
 
     return varians
 
+def saveStandardizedData():
+    allrecords = rman.getIterableRecords(recordsFile='../../out/trainRecords')
+    allrecords.extend(rman.getIterableRecords(recordsFile='../../out/testRecords'))
+    for r in allrecords:
+        saveOneData(r)
+
+def saveOneData(r):
+    outfile = open('../../out/standardized-data/' + r.replace('/', '-') + ".txt", 'w')
+    record = wfdb.rdsamp('../../ptbdb/' + r)
+    normalizeddata = normalizeData(record, heartbeats=4)
+    for lead in normalizeddata:
+        for i,val in enumerate(lead):
+            outfile.write(str(val))
+            if i != len(lead) - 1:
+                outfile.write(',')
+        outfile.write('\n')
+    outfile.close()
+
+def loadOneData(r):
+    f = open('../../out/standardized-data/' + r.replace('/', '-') + ".txt", 'r')
+    data = []
+    for line in f:
+        l = line.strip().split(',')
+        fl = [float(x) for x in l]
+        data.append(fl)
+    plot.figure()
+    plot.plot(data[2])
+    plot.show()
+
 def analyzeAllRecords():
     allrecords = rman.getIterableRecords(recordsFile='../../out/trainRecords')
 
@@ -132,3 +167,5 @@ def analyzeAllRecords():
         #     rutil.showGraph(record, start, end)
 
 #analyzeAllRecords()
+
+saveStandardizedData()
