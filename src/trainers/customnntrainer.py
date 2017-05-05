@@ -35,7 +35,7 @@ class EcgTrainer:
         for rec in self.testList:
             #print('testing ' + rec)
             record = wfdb.rdheader('../ptbdb/'+rec)
-            (sqerr, correct, healthyCorrect) = self.error(record)
+            (sqerr, correct, healthyCorrect) = self.error(rec, record)
             ers.append(sqerr)
             if correct: numcorrect += 1
             if healthyCorrect: numHealthyCorrect += 1

@@ -145,16 +145,15 @@ def saveOneData(r):
     outfile.close()
 
 def loadOneData(r):
-    f = open('../out/standardized-data/' + r.replace('/', '-') + ".txt", 'r')
+    f = open('../../out/standardized-data/' + r.replace('/', '-') + ".txt", 'r')
     data = []
     for line in f:
         l = line.strip().split(',')
         fl = [float(x) for x in l]
         data.append(fl)
-    # plot.figure()
-    # plot.plot(data[2])
-    # plot.show()
-    return data
+    plot.figure()
+    plot.plot(data[2])
+    plot.show()
 
 def analyzeAllRecords():
     allrecords = rman.getIterableRecords(recordsFile='../../out/trainRecords')

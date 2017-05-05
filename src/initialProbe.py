@@ -28,8 +28,8 @@ def showGraph(pat='patient002/s0015lre'):
     print("the number of datapoint is %d "  % record.siglen)
     nsig = record.nsig
     plt.figure(1)
-    ncol = 2
-    nrow = round(nsig / 2.0)
+    ncol = 3
+    nrow = round(nsig / 3.0)
 
     for i in range(nsig):
         data = rutil.extractGraph(i, record)
@@ -62,4 +62,4 @@ def writePatientData():
 
 #writeAllDiagnosisToFile()
 
-rman.separateRecords()
+#rman.separateRecords()
